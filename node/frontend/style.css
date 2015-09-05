@@ -1,0 +1,115 @@
+* {
+	font-family: 'Signika Negative', sans-serif;
+
+}
+body {
+		background: rgb(51,51,51);
+
+	position: relative;
+}
+
+.start{
+	position: absolute;
+	left:45%;
+	top: 55%;
+	font-size: 40px;
+	color:white;
+
+}
+
+.start:hover{
+	color:#34D0BA;
+}
+
+
+
+input{
+	position: absolute;
+	top: -1000px;
+}
+
+.control{
+	position: absolute;
+	margin-top:0px;
+	height: 15%;
+	width: 100%;
+	background-color: #00808A;
+	padding: 10px 10px 10px 10px;
+	-webkit-border-radius: 0.7em;
+    -moz-border-radius: 0.7em;
+    display:inline-block;
+    white-space: nowrap;
+
+}
+
+.title{
+	text-align: center;
+	font-size: 30px;
+	color:white;
+	/*background-color: white;*/
+}
+
+.wordBox {
+	position: relative;
+	padding:8px 15px 8px 15px;
+	-webkit-transition: top 1.4s, opacity 0.5s, -webkit-transform 0.5s;
+	transition: top 1.4s, opacity 0.5s, transform 0.5s;
+	background-color: #00685A;
+	-webkit-border-radius: 0.7em;
+    -moz-border-radius: 0.7em; 
+    width:100px;
+    text-align:center;
+}
+
+.opponentWordBox {
+	opacity: 0.5;
+}
+
+.typed {
+	color: black;
+}
+.remaining{
+	color:white;
+}
+.scoreBox {
+	position: relative;
+	background-color: #00808A;
+	display: inline-block;
+	white-space: nowrap;
+	text-align: center;
+}
+/*.player{
+	display:inline-block;
+	float:right;
+}*/
+
+.playerWrap{
+	display: inline-block;
+	width:33%;
+	vertical-align: top;
+	/*background: #FF7F24;*/
+}
+
+
+.opponentWrap{
+	display: inline-block;
+	/*float:right;*/
+	width:33%;
+	vertical-align: top;
+	white-space: nowrap;
+	/*background: #FF7F24;*/
+}
+
+.opponent{
+	/*background: #FF7F24;*/
+    	position:relative;
+    	vertical-align: top;
+    	display: inline-block;
+}
+.clock{
+	width:33%;
+	margin-left: 100px;
+	vertical-align: top;
+	display: inline-block;
+	/*text-align: center;*/
+}

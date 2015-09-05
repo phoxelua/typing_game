@@ -1,0 +1,141 @@
+* {
+	font-family: 'Signika Negative', sans-serif;
+
+}
+body {
+		background: rgb(51,51,51);
+	position: relative;
+	margin: 0px;
+}
+
+.start{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 55%;
+	height: 50px;
+	width: 150px;
+	font-size: 40px;
+	color:white;
+	cursor: pointer;
+	margin: auto;
+}
+
+.start:hover{
+	color:#34D0BA;
+}
+
+.start:click{
+
+}
+
+input{
+	position: absolute;
+	top: -1000px;
+}
+
+.control{
+	position: absolute;
+	margin-top:0px;
+	height: 50px;
+	width: 94%;
+	margin-left: 3%;
+	background-color: #00808A;
+	padding: 5px 10px 5px 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display:inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+}
+
+.title{
+	text-align: center;
+	font-size: 30px;
+	color:white;
+	/*background-color: white;*/
+}
+
+.wordBox {
+	position: absolute;
+	padding:8px 15px 8px 15px;
+	-webkit-transition: top 1.4s, opacity 0.5s, -webkit-transform 0.5s;
+	transition: top 1.4s, opacity 0.5s, transform 0.5s;
+	background-color: #00685A;
+	-webkit-border-radius: 0.7em;
+    -moz-border-radius: 0.7em; 
+    width:100px;
+    text-align:center;
+}
+
+.opponentWordBox {
+	opacity: 0.5;
+}
+
+.typed {
+	color: black;
+}
+.remaining{
+	color:white;
+}
+.scoreBox {
+	position: relative;
+	background-color: #00808A;
+	display: inline-block;
+	white-space: nowrap;
+	text-align: center;
+}
+/*.player{
+	display:inline-block;
+	float:right;
+}*/
+
+.playerWrap{
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	/*background: #FF7F24;*/
+}
+
+
+.opponentWrap{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	white-space: nowrap;
+	/*background: #FF7F24;*/
+}
+
+.opponent{
+	/*background: #FF7F24;*/
+    	position:relative;
+    	vertical-align: top;
+    	display: inline-block;
+}
+.clock{
+	width:33%;
+	margin-left: 33%;
+	margin-right: 33%;
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+
+}
+.clockInner {
+	display: inline-block;
+	width: 60px;
+	height: 40px;
+	font-size: 35px;
+	padding-left: 1px;
+	background-color: black;
+	border-radius: 5px;
+	-moz-border-radius;
+	color:white;
+}
+
+
+

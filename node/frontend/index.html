@@ -1,0 +1,31 @@
+<html ng-app="game">
+	<head>
+		<script src="angular.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="app.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+	</head>
+	<body ng-controller="gameController" ng-click="bodyClick()">
+		<div class="title">DAS TYPING GAME</div>
+		<div class="control">
+			<div class="playerWrap">
+				Your Score:	
+				<div class="scoreBox player" ng-bind="player.score">{{player.score}}</div>
+			</div>
+			<div class="clock">
+				<div class="clockInner" ng-bind="timeRemaining"></div>
+			</div>
+			<div class = "opponentWrap">
+				Opponent Score:
+				<div class="scoreBox opponent" ng-bind="opponent.score">{{opponent.score}}</div>
+			</div>
+		</div>
+		<div class="wordBox" ng-repeat="word in words" ng-style="wordStyle(word)" ng-class="{'opponentWordBox':word.owner==1}">
+			<span class="typed" ng-bind="word.typed"></span><span class="remaining" ng-bind="word.remaining"></span>
+		</div>
+		<div class="start" ng-hide="countdownStarted" ng-click="startTimer()">START</div>
+		<input id="inputBox" autofocus type="text" ng-keypress="keyPressed($event)">
+	</body>
+
+</html>
